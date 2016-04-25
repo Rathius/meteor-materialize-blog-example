@@ -1,0 +1,37 @@
+<template name="nav">
+ <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo center">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+           <a href="{{blogPathFor "blogIndex"}}">Blog</a>
+        </li>
+        <li>
+           <a href="{{blogPathFor "blogAdmin"}}">Admin Area (must login)</a>
+        </li>
+      </ul>
+      <ul class="right">
+        {{> atNavButton }}
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+           <a href="{{blogPathFor "blogIndex"}}">Blog</a>
+        </li>
+        <li>
+           <a href="{{blogPathFor "blogAdmin"}}">Admin Area (must login)</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+</template>
+
+

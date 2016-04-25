@@ -1,0 +1,16 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Meteor Blog Example</title>
+  <link rel="alternate" type="application/rss+xml" title="Example Blog App w/MaterializeCSS" href="/rss/posts">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<template name="layout">
+  {{> nav}}
+  <div class="container">
+    {{> yield }}
+  </div>
+  <hr>
+  {{> footer}}
+</template>
